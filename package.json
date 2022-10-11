@@ -1,0 +1,30 @@
+{
+  "name": "projeto-e-commerce-com-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /index.js localhost 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeriodesaf/Projeto-e-commerce-com-Mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogeriodesaf/Projeto-e-commerce-com-Mongoose/issues"
+  },
+  "homepage": "https://github.com/rogeriodesaf/Projeto-e-commerce-com-Mongoose#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
