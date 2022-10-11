@@ -1,0 +1,12 @@
+<div class="product-page">
+    <h1>Sobre o produto</h1>
+    <a href="/products/">voltar</a>
+    
+    <h3>Nome do Produto: {{product.name}}</h3>
+    <p>Preço : R${{product.price}}</p>
+    <img src="{{product.image}}" alt="{{product.name}}">
+    <p>{{product.description}}</p>
+    <form action="/products/remove/{{product._id}}" method="POST">
+        <input type="submit" class="btn" value="Excluir">
+    </form>
+</div>

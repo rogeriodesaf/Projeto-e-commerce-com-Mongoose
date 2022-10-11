@@ -1,5 +1,5 @@
 const Product = require("../models/Products")
-
+const {ObjecId} = require('mongodb')
 module.exports =  class ProductController{
     static createProduct(req,res){
         res.render('products/create')
@@ -24,5 +24,19 @@ module.exports =  class ProductController{
    const products = await Product.find().lean()
         console.log(products)
        res.render('products/all',{products})
+   }
+
+   static async readProduct(req,res){
+
+    const id = req.params.id
+    const product = await Product.findById(id).lean()
+    res.render('products/read',{product})
+   }
+
+   static async removeProduct(req,res){
+    const id = req.params.id 
+    await Product.findByIdAndDelete(id)
+
+    res.redirect('/products/')
    }
 }
